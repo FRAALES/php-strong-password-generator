@@ -35,16 +35,17 @@
             Genera una Password Sicura
         </h2>
         <form class="text-center my-5 bg-light">
-            <label for="password">Lunghezza Password:</label>
-            <input type="password" name="password" id="password">
+            <label for="length">Lunghezza Password:</label>
+            <input type="number" name="length" id="length">
+            <input class="bg-info text-light" type="submit" value="CREATE">
             <br>
-            <label for="ripetizioni_consentite">Consenti ripetizioni di uno o più caratteri:</label>
-            <label for=""><input type="radio">Sì</label>
-            <br>
-            <label for=""><input type="radio">No</label>
-            <br>
-            <input class="bg-info text-light"type="submit" value="INVIA LUNGHEZZA PASSWORD">
-            <input type="submit" value="Annulla">
+            
+            <h1 class="my3">
+                Generated Password (<?php echo strlen($res); ?>):
+
+                <span class="bg-dark text-light"><?php echo $res; ?></span>
+            
+            </h1>
         </form>
 
     </body>
