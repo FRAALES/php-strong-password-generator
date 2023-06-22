@@ -7,12 +7,14 @@
     <title>Password generator</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    
+
+    <?php include "functions.php" ?>
+
     <style>
     
     </style>
     </head>
-    <body class="container bg-dark">
+    <body class="container bg-danger  ">
         <!-- Todo
 
             Dobbiamo creare una pagina che permetta ai nostri utenti di utilizzare il nostro generatore di password (abbastanza) sicure. L’esercizio è suddiviso in varie milestone ed è molto importante svilupparle in modo ordinato.
@@ -24,14 +26,7 @@
         Milestone 2
 
             Verificato il corretto funzionamento del nostro codice, spostiamo la logica in un file functions.php che includeremo poi nella pagina principale. 
-            LEZIONE 21 GIUGNO 02:07:00 (SI CREANO I DUE FILE E SI USA INCLUDE E SESSION_START) -->
-
-
-        <?php
-
-            $password = $_GET['password'];
-            var_dump($password);
-        ?>
+            LEZIONE 21 GIUGNO 02:43:40 (SI CREANO I DUE FILE E SI USA INCLUDE) -->
 
         <h1 class="text-light text-center my-5">
             Strong Password Generator
